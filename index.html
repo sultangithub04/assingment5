@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header
+        class="flex-no-wrap fixed top-0 z-10 flex w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4">
+        <section class="w-11/12 mx-auto ">
+            <nav class="flex justify-between">
+                <button onclick="window.location.href='./blog.html';"
+                    class="bg-primary px-8 py-6 rounded-xl font-semibold text-xl">Blog</button>
+                <div class="flex items-center gap-3">
+                    <img src="./assets/logo.png" alt="">
+                    <h2 class="text-xl font-semibold">Donate Bangladesh</h2>
+                </div>
+                <div class="flex justify-center items-center gap-2 text-xl"><img src="./assets/coin.png" alt="">
+                    <span id="available-balance">15500 </span>
+                    <p>BDT</p>
+                </div>
+
+            </nav>
+            <div class="mt-10 flex justify-center gap-4">
+                <button id="donation-tab" class="bg-primary px-8 py-6 rounded-xl font-semibold text-xl">Donation</button>
+                <button id="history-tab" class="px-8 py-6 rounded-xl font-semibold text-xl">History</button>
+            </div>
+        </section>
+    </header>
+    <main class="w-11/12 mx-auto mt-10 space-y-8 pt-52">
+        <section id="donate-tab-hide">
+            <!-- image 1 -->
+            <div class="grid grid-cols-2 border-2 rounded-xl">
+                <div class="p-8">
+                    <img class="w-full" src="./assets/noakhali.png" alt="">
+                </div>
+                <div class="flex flex-col text-start justify-between py-8 pr-8">
+                    <div class="flex items-center gap-2 text-xl"><img src="./assets/coin.png" alt="">
+                        <span id="current-amount1">5500 </span>
+                        <p>BDT</p>
+                    </div>
+                    <h2 id="donate-text" class="text-xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation
+                        will help provide essential supplies and to those affected by this disaster. Every contribution,
+                        big
+                        or small, makes difference. Please join us in supporting the relief efforts and making a
+                        positive
+                        impact on the lives of those in need.</p>
+                    <input type="text" id="input-amount1" class="border-2 p-2 rounded-xl"
+                        placeholder="Write Donation Amount">
+                    <button id="donate1" onclick="my_modal_5.showModal()" class="bg-primary px-8 py-6 rounded-xl font-semibold text-xl">Donate
+                        Now</button>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+                            <h3 class="text-4xl text-center font-bold">Congrates!</h3>
+                            <div class="flex justify-center py-6">
+                                <img src="./assets/coin.png" alt="">
+                            </div>
+                            <p class="py-4 text-gray-500 font-bold text-center text-2xl">You Have Donate for HumanKind</p>
+                            <p class="py-4 text-3xl font-extrabold text-center">Successfully</p>
+                            <div class="modal-action justify-center">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close Confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+
+
+                </div>
+            </div>
+            <!-- image 2 -->
+            <div class="grid grid-cols-2 border-2 rounded-xl">
+                <div class="p-8">
+                    <img class="w-full" src="./assets/feni.png" alt="">
+                </div>
+                <div class="flex flex-col text-start justify-between py-8 pr-8">
+                    <div class="flex items-center gap-2 text-xl"><img src="./assets/coin.png" alt="">
+                        <span id="current-amount2">30500 </span>
+                        <p>BDT</p>
+                    </div>
+                    <h2 id="donate-text2" class="text-xl font-semibold">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p> The recent floods in Feni have devastated local communities, leading to severe disruption and
+                        loss. Your generous donation will help provide immediate aid, including food, clean water, and
+                        medical supplies, to those affected by this calamity. Together, we can offer crucial support and
+                        help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a
+                        real difference. Please consider donating today to assist those in urgent need.</p>
+                    <input type="text" id="input-amount2" class="border-2 p-2 rounded-xl"
+                        placeholder="Write Donation Amount">
+                    <button id="donate2" onclick="my_modal_5.showModal()" class="bg-primary px-8 py-6 rounded-xl font-semibold text-xl">Donate
+                        Now</button>
+
+
+                </div>
+            </div>
+            <!-- image 3 -->
+            <div class="grid grid-cols-2 border-2 rounded-xl">
+                <div class="p-8">
+                    <img class="w-full" src="./assets/quota-protest.png" alt="">
+                </div>
+                <div class="flex flex-col text-start justify-between py-8 pr-8">
+                    <div class="flex items-center gap-2 text-xl"><img src="./assets/coin.png" alt="">
+                        <span id="current-amount3">75500 </span>
+                        <p>BDT</p>
+                    </div>
+                    <h2 id="donate-text3" class="text-xl font-semibold">Aid for Injured in the Quota Movement</h2>
+                    <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many
+                        individuals. Your support is crucial in providing medical assistance, rehabilitation, and
+                        necessary supplies to those affected. By contributing, you help ensure that injured individuals
+                        receive the care and support they need during this challenging time. Every donation plays a
+                        vital role in alleviating their suffering and aiding in their recovery. Please consider making a
+                        donation to support these brave individuals in their time of need.</p>
+                    <input type="text" id="input-amount3" class="border-2 p-2 rounded-xl"
+                        placeholder="Write Donation Amount">
+                    <button id="donate3" onclick="my_modal_5.showModal()" class="bg-primary px-8 py-6 rounded-xl font-semibold text-xl">Donate
+                        Now</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- history -->
+        <div id="history-section" class="hidden">
+
+
+        </div>
+
+
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
